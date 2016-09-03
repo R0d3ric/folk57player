@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Player simple</title>
+    <link rel="stylesheet" type="text/css" href="player.css" />
+</head>
+<body>
+    <audio id="audioPlayer" ontimeupdate="update(this)">
+        <source src="http://radiojerico.ice.infomaniak.ch/radiojerico-64.mp3">
+        <!-- <source src="Kalimba.mp3"> -->
+    </audio>
+
+<!-- <span class="volume">
+    <a class="stick1" onclick="volume('audioPlayer', 0)"></a>
+    <a class="stick2" onclick="volume('audioPlayer', 0.3)"></a>
+    <a class="stick3" onclick="volume('audioPlayer', 0.5)"></a>
+    <a class="stick4" onclick="volume('audioPlayer', 0.7)"></a>
+    <a class="stick5" onclick="volume('audioPlayer', 1)"></a>
+</span> -->
+
+    <div id="lePlayer">
+        <div id="playerControls">
+            <img id="boutonPlay" src="play.png" alt="play" width="65px" onclick="play('audioPlayer', this)">
+            <img id="boutonResume" src="stop.png" alt="stop" width="65px" onclick="resume('audioPlayer', this)">
+        </div>
+        <div id="progressBarControl">
+            <div id="progressBar">
+            Pas de lecture
+            </div>
+        </div>
+    </div>
+
+    <script src="playersimple.js"></script>
+</body>
+</html>
